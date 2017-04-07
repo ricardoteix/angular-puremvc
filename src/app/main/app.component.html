@@ -1,0 +1,23 @@
+<!-- Wrapper-->
+<div id="wrapper">
+
+  <!-- Left navigation bar -->
+  <!--<navigation *ngIf="isLogged"></navigation>-->
+
+  <!-- Main page wrapper -->
+  <div id="page-wrapper" class="gray-bg" [ngClass]="{'no-margin': !isLogged}">
+
+    <!-- Top navigation -->
+    <!--<topnavbar [hidden]="!isLogged"></topnavbar>-->
+
+    <!-- Main view/routes wrapper-->
+    <router-outlet></router-outlet>
+
+    <!-- Footer -->
+    <!--<footer *ngIf="isLogged"></footer>-->
+
+  </div>
+  <!-- End page wrapper-->
+
+</div>
+<!-- End wrapper-->
